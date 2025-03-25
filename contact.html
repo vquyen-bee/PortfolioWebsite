@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        h1{
+           color:darkslategrey;     
+        }
+        fieldset{
+            width: 80%;
+            display: block;
+            margin:auto;
+         }
+
+         header{
+            text-align: center;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./mod1-resume.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./projects.html">Projects</a>
+        </nav>
+    </header>
+    <h1>Contact Me</h1>
+   
+    <!-- Add basic information -->
+    <form>
+        <fieldset>
+            <h2>Let's connect</h2>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" required placeholder="Enter your Name">
+            <br><br>
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="text" required placeholder="Enter your Email address">
+            <br><br>
+            <label for="Phone number">Phone number </label>
+            <input id="Phone number" name="Phone number" type="text" placeholder="Optional">
+            <br><br>    
+
+            <!-- Add radio buttion for the prefered contact method -->
+            <label for="Method">Preferred Contact Method</label>
+            <br>
+            <input type="radio" name="Email" id="Email"><label>Email</label><br>
+            <input type="radio" name="Phone" id="Phone"><label>Phone</label><br>
+            <input type="radio" name="Other" id="Other"><label>Other</label>
+            <input type="text" placeholder="If other what?"><br>
+            <br><br>
+
+            <!-- Add your hobbies -->
+             <label for="time">What is the best time to contact</label>
+            <br>
+            <input type="checkbox" name="Morning" value="Morning"><label for="Morning">Morning</label><br>
+            <input type="checkbox" name="Afternoon" value="Afternoon"><label for="Afternoon">Afternoon</label><br>
+            <input type="checkbox" name="No preference" value="No preference"><label for="No preference">No preference</label><br>
+            <br><br>
+
+            <!-- A dropdown or text field for the subject of the message -->
+            <label for="Subject of the message">Subject of the message</label>
+            <select name="Subject of the message" id="Subject of the message">
+                <option value="" disabled selected>*Select a subject of the message</option>
+                <option value="General Inquiries">General Inquiries</option>
+                <option value="Professional Opportunities">Professional Opportunities</option>
+                <option value="Feedback and Testimonials">Feedback and Testimonials</option>
+                <option value="Project or Service Request">Project or Service Request</option>
+                <option value="Personal Message">Personal Message</option>
+            </select>
+            <br><br>
+
+            <!-- Add message - A large text box where they can write their request -->
+            <label for="Message">Message</label><br>
+            <textarea id="Message" name="Message"></textarea>
+
+           
+
+         <br><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
